@@ -1,0 +1,294 @@
+/* =========================================================
+   PORTFOLIO WEBSITE — RESPONSIVE STYLES
+   Purpose: Adjust the layout for tablets and mobile devices
+========================================================= */
+
+
+/* =========================================================
+   TABLET — Screens up to 900px
+========================================================= */
+
+@media (max-width: 900px) {
+
+    /*
+       Reduce the spacing between navigation links
+       on smaller screens.
+    */
+    .nav-links {
+        gap: 20px;
+    }
+
+
+    /*
+       Change About section from two columns
+       into one column.
+    */
+    .about-grid {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+
+    /*
+       Project cards become one per row.
+    */
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /*
+       Reduce the width of the date column
+       in the experience section.
+    */
+    .experience-item {
+        grid-template-columns: 150px 1fr;
+
+        gap: 30px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE — Screens up to 650px
+========================================================= */
+
+@media (max-width: 650px) {
+
+
+    /* =========================================
+       MOBILE NAVIGATION
+    ========================================= */
+
+    /*
+       Reduce navbar padding on smaller screens.
+    */
+    .navbar {
+        padding: 20px 5%;
+    }
+
+
+    /*
+       Display the hamburger button on mobile.
+    */
+    .menu-toggle {
+        display: block;
+    }
+
+
+    /*
+       Turn the desktop navigation into a
+       vertical dropdown menu.
+    */
+    .nav-links {
+        position: absolute;
+
+        top: 100%;
+
+        left: 0;
+
+        width: 100%;
+
+        padding: 30px 5%;
+
+        background: #05080F;
+
+        border-bottom: 1px solid rgba(124, 196, 255, 0.12);
+
+        flex-direction: column;
+
+        gap: 25px;
+
+        /*
+           Hidden until JavaScript adds the
+           "active" class.
+        */
+        display: none;
+    }
+
+
+    /*
+       JavaScript will add this class when
+       the hamburger button is clicked.
+    */
+    .nav-links.active {
+        display: flex;
+    }
+
+
+    /* =========================================
+       MOBILE HERO
+    ========================================= */
+
+    /*
+       Reduce the amount of empty space above
+       the hero content.
+    */
+    .hero {
+        padding-top: 130px;
+    }
+
+
+    /*
+       Make the large name fit comfortably
+       on mobile screens.
+    */
+    .hero-name {
+        font-size: clamp(3.5rem, 17vw, 6rem);
+    }
+
+
+    /*
+       Reduce spacing between the name and
+       role labels.
+    */
+    .hero-role {
+        margin-top: 30px;
+    }
+
+
+    /*
+       Slightly reduce the description size.
+    */
+    .hero-description {
+        font-size: 0.9rem;
+    }
+
+
+    /*
+       Stack the hero buttons vertically.
+    */
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    /*
+       Remove the scroll indicator on mobile
+       to keep the screen uncluttered.
+    */
+    .hero-scroll {
+        display: none;
+    }
+
+
+    /* =========================================
+       MOBILE SECTIONS
+    ========================================= */
+
+    /*
+       Reduce vertical spacing between sections.
+    */
+    .section {
+        padding: 100px 5%;
+    }
+
+
+    /*
+       Reduce spacing below section headings.
+    */
+    .section-header {
+        margin-bottom: 50px;
+    }
+
+
+    /* =========================================
+       MOBILE ABOUT
+    ========================================= */
+
+    .about-introduction p {
+        font-size: 2.2rem;
+    }
+
+
+    /* =========================================
+       MOBILE SKILLS
+    ========================================= */
+
+    /*
+       Change skills from two columns
+       to one column.
+    */
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /*
+       Remove the vertical dividing line because
+       there is no longer a second column.
+    */
+    .skill-category:nth-child(odd) {
+        border-right: none;
+    }
+
+
+    /* =========================================
+       MOBILE PROJECTS
+    ========================================= */
+
+    /*
+       Make project cards slightly smaller
+       on mobile.
+    */
+    .project-card {
+        min-height: 350px;
+
+        padding: 25px;
+    }
+
+
+    /*
+       Stack the technologies and project link
+       vertically.
+    */
+    .project-footer {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    /* =========================================
+       MOBILE EXPERIENCE
+    ========================================= */
+
+    /*
+       Stack the experience date and description.
+    */
+    .experience-item {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+
+        padding: 35px 0;
+    }
+
+
+    /* =========================================
+       MOBILE CONTACT
+    ========================================= */
+
+    .contact-content h2 {
+        font-size: 3.5rem;
+    }
+
+
+    /* =========================================
+       MOBILE FOOTER
+    ========================================= */
+
+    /*
+       Stack the footer information vertically.
+    */
+    .footer {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+}
