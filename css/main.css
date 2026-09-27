@@ -548,11 +548,11 @@ button {
 
 
 /* =========================================================
-   6. SKILLS / TECH STACK
+   6. SKILLS STACK
 ========================================================= */
 
 /*
-   Creates a 2 × 2 grid for skill categories.
+   Displays skill categories in a two-column grid.
 */
 .skills-grid {
     display: grid;
