@@ -189,7 +189,65 @@ projectDialog.addEventListener("click", (event) => {
 
 
 /* =========================================================
-   5. SCROLL REVEAL ANIMATION
+   5. CONTACT FORM EMAIL HANDOFF
+========================================================= */
+
+const contactForm = document.querySelector("#contact-form");
+const contactName = document.querySelector("#contact-name");
+const contactSenderEmail = document.querySelector("#contact-sender-email");
+const contactMessage = document.querySelector("#contact-message");
+const contactFormStatus = document.querySelector("#contact-form-status");
+
+contactForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    contactName.value = contactName.value.trim();
+    contactSenderEmail.value = contactSenderEmail.value.trim();
+    contactMessage.value = contactMessage.value.trim();
+
+    contactName.setCustomValidity(contactName.value ? "" : "Please enter your name.");
+    contactSenderEmail.setCustomValidity(
+        /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(contactSenderEmail.value)
+            ? ""
+            : "Enter a valid email address, such as name@example.com."
+    );
+    contactMessage.setCustomValidity(contactMessage.value ? "" : "Please enter a message.");
+
+    if (!contactForm.reportValidity()) {
+        return;
+    }
+
+    const submitButton = contactForm.querySelector("[type='submit']");
+    submitButton.disabled = true;
+    contactFormStatus.textContent = "Sending your message…";
+
+    try {
+        const response = await fetch("https://formsubmit.co/ajax/mikky0duwole@gmail.com", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json"
+            },
+            body: JSON.stringify(Object.fromEntries(new FormData(contactForm).entries()))
+        });
+        const result = await response.json();
+
+        if (!response.ok || !result.success) {
+            throw new Error("The form service did not accept the message.");
+        }
+
+        contactForm.reset();
+        contactFormStatus.textContent = "Thanks! Your message has been sent.";
+    } catch (error) {
+        contactFormStatus.textContent = "Your message could not be sent. Please try again or email mikky0duwole@gmail.com directly.";
+    } finally {
+        submitButton.disabled = false;
+    }
+});
+
+
+/* =========================================================
+   6. SCROLL REVEAL ANIMATION
 ========================================================= */
 
 

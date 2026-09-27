@@ -1048,6 +1048,16 @@ button {
     border-top: 1px solid rgba(124, 196, 255, 0.12);
 }
 
+.experience {
+    padding-top: 85px;
+    padding-bottom: 85px;
+}
+
+.experience .section-header {
+    margin-bottom: 35px;
+    padding-bottom: 14px;
+}
+
 
 /*
    Each experience entry uses two columns:
@@ -1067,6 +1077,11 @@ button {
     border-bottom: 1px solid rgba(124, 196, 255, 0.12);
 }
 
+.experience .experience-item {
+    gap: 32px;
+    padding: 26px 0;
+}
+
 
 /* Experience date */
 .experience-date {
@@ -1080,9 +1095,19 @@ button {
 
 /* Experience title */
 .experience-content h3 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 
-    margin-bottom: 15px;
+    margin-bottom: 8px;
+}
+
+.experience-content .leadership-role {
+    margin-top: 24px;
+}
+
+.experience-organization {
+    margin-bottom: 8px;
+    color: #4D9FFF !important;
+    font-size: 0.8rem;
 }
 
 
@@ -1150,6 +1175,86 @@ button {
     border-bottom: 1px solid #4D9FFF;
 
     padding-bottom: 5px;
+}
+
+.contact-form {
+    display: grid;
+    gap: 20px;
+    width: min(100%, 620px);
+    margin-top: 42px;
+}
+
+.contact-honeypot {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.contact-form-field {
+    display: grid;
+    gap: 8px;
+}
+
+.contact-form-field label {
+    color: #B7C1D0;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.contact-form-field input,
+.contact-form-field textarea {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid rgba(124, 196, 255, 0.25);
+    border-radius: 2px;
+    background: #080D16;
+    color: #F1F5FA;
+    font: inherit;
+}
+
+.contact-form-field textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact-form-field input:focus,
+.contact-form-field textarea:focus {
+    outline: 2px solid #4D9FFF;
+    outline-offset: 2px;
+}
+
+.contact-submit {
+    justify-self: start;
+    padding: 14px 18px;
+    border: 1px solid #4D9FFF;
+    background: transparent;
+    color: #7CC4FF;
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.contact-submit:hover,
+.contact-submit:focus-visible {
+    background: #4D9FFF;
+    color: #05080F;
+}
+
+.contact-submit:disabled {
+    cursor: wait;
+    opacity: 0.65;
+}
+
+.contact-form-status {
+    min-height: 1.5em;
+    margin: 0;
+    color: #B7C1D0;
+    font-size: 0.9rem;
+    line-height: 1.5;
 }
 
 
