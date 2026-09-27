@@ -151,6 +151,6 @@ Artificial Intelligence & Data Science Student
 
 Interested in AI, Data Science, Software Engineering, FinTech and technology.
 
-## 🔗 Repository
+##  Repository
 
 https://github.com/MikkyXCode/Ayomikun_Potfolio
