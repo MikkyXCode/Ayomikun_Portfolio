@@ -338,196 +338,249 @@
             <div class="projects-grid">
 
 
-                <!-- PROJECT 1 -->
-
+                <!-- SNACK-MAN -->
                 <article class="project-card" data-category="web">
-
+                    <button class="project-card-trigger" type="button" aria-haspopup="dialog" aria-label="Open Snack-Man project details"></button>
                     <div class="project-top">
-
-                        <span class="project-number">
-                            01
-                        </span>
-
-                        <span class="project-type">
-                            WEB DEVELOPMENT
-                        </span>
-
+                        <span class="project-number">01</span>
+                        <span class="project-type">SOFTWARE ENGINEERING · WEB GAME</span>
                     </div>
-
                     <div class="project-content">
-
-                        <h3>
-                            Personal Portfolio
-                        </h3>
-
-                        <p>
-                            Interactive personal portfolio
-                            built using HTML, CSS and JavaScript.
-                        </p>
-
+                        <h3>Snack-Man</h3>
+                        <p>A browser arcade game with three maze levels, keyboard and on-screen controls, enemy encounters, scoring and a local leaderboard.</p>
                     </div>
-
                     <div class="project-footer">
-
-                        <span>
-                            HTML · CSS · JavaScript
-                        </span>
-
-                        <a href="#">
-                            VIEW PROJECT →
-                        </a>
-
+                        <span>HTML · CSS · JavaScript</span>
+                        <a class="project-source-link" href="https://github.com/MikkyXCode/Snacck---Man" target="_blank" rel="noopener noreferrer">SOURCE CODE ↗</a>
                     </div>
+                    <template class="project-details">
+                        <p>A browser-based arcade game inspired by the classic Pac-Man concept, built from scratch using <strong>HTML, CSS and JavaScript</strong>.</p>
+                        <p>The project focuses on implementing interactive gameplay, game-state management, collision detection, scoring, multiple levels, enemy behaviour and a persistent leaderboard without relying on a game engine.</p>
 
+                        <h3>Features</h3>
+                        <ul>
+                            <li>Classic maze-based arcade gameplay</li>
+                            <li>Player movement and directional controls</li>
+                            <li>Keyboard controls</li>
+                            <li>On-screen directional controls</li>
+                            <li>Multiple playable maze levels</li>
+                            <li>Player lives system</li>
+                            <li>Score tracking</li>
+                            <li>Collectible points and power-ups</li>
+                            <li>Enemy and ghost behaviour</li>
+                            <li>Scared-enemy mechanics</li>
+                            <li>Collision detection</li>
+                            <li>Level progression</li>
+                            <li>Increasing enemy difficulty between levels</li>
+                            <li>Win and game-over states</li>
+                            <li>Player name entry</li>
+                            <li>Persistent top-10 leaderboard</li>
+                            <li>Score storage using browser <code>localStorage</code></li>
+                            <li>Responsive game interface</li>
+                        </ul>
+
+                        <h3>How It Works</h3>
+                        <p>The game builds the maze programmatically from predefined maze layouts using JavaScript.</p>
+                        <p>During gameplay, the system manages:</p>
+                        <ul>
+                            <li>Player position</li>
+                            <li>Enemy positions</li>
+                            <li>Lives and score</li>
+                            <li>Current level and collectibles</li>
+                            <li>Collisions and enemy states</li>
+                            <li>Level progression</li>
+                        </ul>
+                        <p>When the player collects all available points in a maze, the game progresses to the next level. Enemy speed increases as the player advances, creating progressively more difficult gameplay.</p>
+                        <p>When an enemy is in a scared state, the player can collect it for additional points rather than losing a life.</p>
+
+                        <h3>Leaderboard</h3>
+                        <p>Snack-Man includes a persistent leaderboard implemented using the browser's <code>localStorage</code> API. Players can enter their name after a game and save their score. Scores are sorted from highest to lowest and the system retains the <strong>top 10 scores</strong>.</p>
+                        <p>This demonstrates client-side data persistence without requiring a backend database.</p>
+
+                        <h3>Technologies</h3>
+                        <ul>
+                            <li><strong>HTML5</strong> — page structure and game interface</li>
+                            <li><strong>CSS3</strong> — layout, styling and responsive presentation</li>
+                            <li><strong>JavaScript</strong> — gameplay logic, game state, movement, collision detection, scoring and leaderboard functionality</li>
+                            <li><strong>Web Storage API</strong> — persistent local leaderboard data</li>
+                            <li><strong>Git and GitHub</strong> — source control and project development</li>
+                        </ul>
+
+                        <h3>Project Structure</h3>
+                        <pre><code>Snacck---Man/
+├── images/
+│   └── game assets
+├── index.html
+├── script.js
+└── style.css</code></pre>
+
+                        <h3>Running the Project</h3>
+                        <p>Clone the repository:</p>
+                        <pre><code>git clone https://github.com/MikkyXCode/Snacck---Man.git</code></pre>
+                        <p>Open <code>index.html</code> in a modern web browser.</p>
+                        <p>No backend server or additional dependencies are required.</p>
+
+                        <h3>What I Learned</h3>
+                        <p>This project strengthened my practical JavaScript and front-end development skills, particularly:</p>
+                        <ul>
+                            <li>Managing complex application state</li>
+                            <li>Implementing game logic</li>
+                            <li>Working with arrays and structured data</li>
+                            <li>DOM manipulation and event handling</li>
+                            <li>Collision detection and progressive difficulty</li>
+                            <li>Client-side persistence</li>
+                            <li>Building interactive browser applications</li>
+                            <li>Debugging and iteratively developing a larger JavaScript codebase</li>
+                        </ul>
+
+                        <h3>Author</h3>
+                        <p><strong>Ayomikun Oduwole</strong><br>AI &amp; Data Science student interested in AI, Data Science, Software Engineering and Technology.</p>
+                        <a href="https://github.com/MikkyXCode/Snacck---Man" target="_blank" rel="noopener noreferrer">View the Snack-Man source code ↗</a>
+                    </template>
                 </article>
 
-
-                <!-- PROJECT 2 -->
-
-                <!-- ==================== PROJECT 1: SNACK-MAN ==================== -->
-
-                <article class="project-card" data-category="web">
-
-                    <!-- Project number and category -->
+                <!-- FINANCIAL MARKET PREDICTION AND STRATEGY ANALYSIS -->
+                <article class="project-card" data-category="data ai">
+                    <button class="project-card-trigger" type="button" aria-haspopup="dialog" aria-label="Open Financial Market Prediction project details"></button>
                     <div class="project-top">
-
-                        <span class="project-number">
-                            01
-                        </span>
-
-                        <span class="project-type">
-                            WEB DEVELOPMENT
-                        </span>
-
+                        <span class="project-number">02</span>
+                        <span class="project-type">FINTECH · MACHINE LEARNING</span>
                     </div>
-
-
-                    <!-- Project information -->
                     <div class="project-content">
-
-                        <!-- Project title -->
-                        <h3>
-                            Snack-Man
-                        </h3>
-
-                        <!-- Project description -->
-                        <p>
-                            A browser-based arcade game inspired by the classic
-                            Pac-Man concept. Built from scratch using HTML, CSS
-                            and JavaScript, featuring interactive gameplay,
-                            scoring and keyboard controls.
-                        </p>
-
+                        <h3>Financial Market Prediction &amp; Trading Strategy Analysis</h3>
+                        <p><strong>Financial Market Anomaly Detection System</strong> — A Python-based machine-learning system that analyses 2.7M+ stock-market records using engineered financial indicators to detect market patterns and evaluate trading signals through model evaluation, backtesting, and transaction-cost analysis. Deployed as an interactive Streamlit application.</p>
                     </div>
-
-
-                    <!-- Project footer -->
                     <div class="project-footer">
-
-                        <!-- Technologies used -->
-                        <span>
-                            HTML · CSS · JavaScript
-                        </span>
-
-                        <a href="projects/project2.html">
-                            VIEW PROJECT →
-                        </a>
-
-
+                        <span>Python · Pandas · NumPy · scikit-learn · Streamlit</span>
+                        <a class="project-source-link" href="https://github.com/MikkyXCode/financial-market-prediction-and-trading-strategy-analysis-syste" target="_blank" rel="noopener noreferrer">SOURCE CODE ↗</a>
                     </div>
+                    <template class="project-details">
+                        <h3>Overview</h3>
+                        <p>This project investigates whether historical stock-market data and technical indicators can predict next-day stock price direction and generate a systematic trading strategy.</p>
+                        <p>A machine-learning pipeline cleans and prepares market data, engineers indicators, predicts whether the next trading day's close will rise or fall, compares models against a baseline, backtests the signal, and evaluates risk, trading frequency and transaction-cost sensitivity.</p>
+                        <p>The focus is on evaluating the practical usefulness and limitations of machine-learning signals rather than assuming that prediction accuracy translates into profitable trading.</p>
 
+                        <h3>Research Question</h3>
+                        <p><em>Can historical technical indicators provide useful machine-learning signals for predicting next-day stock price direction, and do those signals translate into a viable trading strategy after considering risk and transaction costs?</em></p>
+
+                        <h3>Dataset</h3>
+                        <p>The dataset contains approximately 2.7 million daily observations across publicly traded companies from January 2000 to February 2026. Variables include ticker, date, open, high, low, close, adjusted close and volume. The raw dataset is excluded because of its size.</p>
+
+                        <h3>Feature Engineering</h3>
+                        <ul>
+                            <li>Daily return</li>
+                            <li>20-day and 50-day moving averages</li>
+                            <li>20-day volatility and 10-day momentum</li>
+                            <li>Volume change</li>
+                            <li>Price relative to the 20-day and 50-day moving averages</li>
+                            <li>20-day versus 50-day moving average</li>
+                        </ul>
+                        <p>The target is the next trading day's closing-price direction: 0 for down and 1 for up. Data was split chronologically into training and testing sets to avoid using future observations during training.</p>
+
+                        <h3>Models</h3>
+                        <p>The project evaluates a majority-class baseline, Logistic Regression, Random Forest, improved Random Forest and final Random Forest. The baseline achieved approximately 51.55% test accuracy; the final Random Forest achieved approximately 50.44%. The technical features did not provide strong out-of-sample predictive power for next-day direction.</p>
+
+                        <h3>Trading Strategy and Gross Backtest Results</h3>
+                        <p>The final model's predictions become a simple long-only signal: prediction 1 means holding the stock for the following trading day; prediction 0 means remaining in cash. Results are compared with buy-and-hold for each ticker.</p>
+                        <div class="project-table-wrap">
+                            <table>
+                                <thead><tr><th>Metric</th><th>Strategy</th><th>Buy &amp; Hold</th></tr></thead>
+                                <tbody>
+                                    <tr><td>Average return</td><td>40.84%</td><td>74.68%</td></tr>
+                                    <tr><td>Median return</td><td>28.78%</td><td>44.94%</td></tr>
+                                    <tr><td>Average max drawdown</td><td>-38.85%</td><td>-45.39%</td></tr>
+                                    <tr><td>Average Sharpe ratio</td><td>0.360</td><td>0.425</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p>The strategy produced positive gross returns for approximately 68.43% of tested tickers, but outperformed buy-and-hold for approximately 39.83%. These historical backtest results do not indicate future performance.</p>
+
+                        <h3>Transaction-Cost Analysis</h3>
+                        <p>Transaction-cost sensitivity was evaluated because the strategy generated frequent position changes.</p>
+                        <div class="project-table-wrap">
+                            <table>
+                                <thead><tr><th>Assumed cost</th><th>Average strategy return</th></tr></thead>
+                                <tbody>
+                                    <tr><td>0%</td><td>40.84%</td></tr>
+                                    <tr><td>0.025%</td><td>23.93%</td></tr>
+                                    <tr><td>0.05%</td><td>9.07%</td></tr>
+                                    <tr><td>0.10%</td><td>-15.49%</td></tr>
+                                    <tr><td>0.20%</td><td>-49.15%</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p>At an assumed 0.10% cost per position change, approximately 29.03% of tickers retained a positive strategy return. These costs are stress-test assumptions, not actual broker costs.</p>
+
+                        <h3>Key Findings</h3>
+                        <ol>
+                            <li>The final Random Forest's 50.44% accuracy was below the 51.55% majority-class baseline.</li>
+                            <li>Additional price-relative and moving-average features slightly improved the Random Forest over its original feature set, but did not beat the baseline.</li>
+                            <li>Average gross strategy performance remained below buy-and-hold.</li>
+                            <li>The strategy averaged approximately 511 position changes per ticker, making transaction costs important.</li>
+                            <li>Small assumed transaction costs could substantially reduce or reverse returns.</li>
+                            <li>The average strategy Sharpe ratio of 0.360 was below buy-and-hold's 0.425.</li>
+                        </ol>
+
+                        <h3>Limitations</h3>
+                        <ul>
+                            <li>The model uses a relatively small set of technical indicators and omits many influences on market behaviour.</li>
+                            <li>Historical performance does not guarantee future results and varies across securities and periods.</li>
+                            <li>The backtest does not model every trading constraint, market impact, bid-ask spreads or slippage in full detail.</li>
+                            <li>Transaction costs are simulated, and results are averaged across tickers rather than forming a capital-weighted portfolio.</li>
+                            <li>Retraining the final Random Forest on the full dataset is computationally expensive on lower-memory systems.</li>
+                        </ul>
+
+                        <h3>Technologies</h3>
+                        <p>Python, Pandas, NumPy, scikit-learn, Matplotlib, Jupyter Notebook, Streamlit and VS Code.</p>
+
+                        <h3>Project Structure</h3>
+                        <pre><code>Financial market prediction and strategy analysis/
+├── app.py
+├── app_data/
+│   ├── app_project_metrics.json
+│   ├── app_transaction_cost_sensitivity.csv
+│   └── ticker_performance_summary.csv
+├── data/
+│   └── readme.md
+├── notebook/
+│   └── financial_market_prediction.ipynb
+├── results/
+│   ├── confusion_matrix.png
+│   ├── model_accuracy_comparison.png
+│   ├── risk_comparison.png
+│   ├── strategy_return_distribution.png
+│   ├── strategy_vs_buy_and_hold.png
+│   └── transaction_cost_sensitivity.png
+├── src/
+│   └── README.md
+├── .gitignore
+├── requirements.txt
+└── README.md</code></pre>
+                        <p>The Streamlit app uses compact per-ticker summaries in <code>app_data/</code>; it does not require the row-level source data or retrain the model when it starts. The full source dataset is excluded from the repository because of its size.</p>
+
+                        <h3>Run the Interactive Demo</h3>
+                        <p>From the project root, install dependencies and start Streamlit:</p>
+                        <pre><code>pip install -r requirements.txt
+streamlit run app.py</code></pre>
+
+                        <h3>Reproducibility</h3>
+                        <p>The Jupyter Notebook documents data loading and cleaning, feature engineering, train/test splitting, model development and evaluation, backtesting, risk analysis, transaction-cost analysis, and conclusions. The raw dataset is excluded because of its size.</p>
+
+                        <h3>Disclaimer</h3>
+                        <p>This educational machine-learning and quantitative-analysis project is not financial advice. Historical backtest results should not be interpreted as a prediction of future investment performance.</p>
+                        <a href="https://github.com/MikkyXCode/financial-market-prediction-and-trading-strategy-analysis-syste/blob/main/README.md" target="_blank" rel="noopener noreferrer">Read the project README ↗</a>
+                    </template>
                 </article>
-
-
-                <!-- PROJECT 3 -->
-
-                <article class="project-card" data-category="data">
-
-                    <div class="project-top">
-
-                        <span class="project-number">
-                            03
-                        </span>
-
-                        <span class="project-type">
-                            DATA ANALYSIS
-                        </span>
-
-                    </div>
-
-                    <div class="project-content">
-
-                        <h3>
-                            Retail Analytics
-                        </h3>
-
-                        <p>
-                            Data analysis project exploring
-                            customer behaviour and purchasing trends.
-                        </p>
-
-                    </div>
-
-                    <div class="project-footer">
-
-                        <span>
-                            Python · Pandas · Data Analysis
-                        </span>
-
-                        <a href="#">
-                            VIEW PROJECT →
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-                <!-- PROJECT 4 -->
-
-                <article class="project-card" data-category="ai">
-
-                    <div class="project-top">
-
-                        <span class="project-number">
-                            04
-                        </span>
-
-                        <span class="project-type">
-                            MACHINE LEARNING
-                        </span>
-
-                    </div>
-
-                    <div class="project-content">
-
-                        <h3>
-                            Customer Churn Prediction
-                        </h3>
-
-                        <p>
-                            Machine learning project predicting
-                            customer churn using Python.
-                        </p>
-
-                    </div>
-
-                    <div class="project-footer">
-
-                        <span>
-                            Python · Machine Learning
-                        </span>
-
-                        <a href="#">
-                            VIEW PROJECT →
-                        </a>
-
-                    </div>
-
-                </article>
-
 
             </div>
+
+            <dialog class="project-dialog" id="project-dialog" aria-labelledby="project-dialog-title">
+                <div class="project-dialog-header">
+                    <h2 id="project-dialog-title"></h2>
+                    <button class="project-dialog-close" type="button" aria-label="Close project details">&times;</button>
+                </div>
+                <div class="project-dialog-content"></div>
+            </dialog>
 
         </section>
 
@@ -634,7 +687,7 @@
                 </p>
 
 
-                <a href="mailto:YOUR-EMAIL@example.com" class="contact-email">
+                <a href="mailto:mikky0duwole@gmail.com" class="contact-email">
 
                     mikky0duwole@gmail.com
 

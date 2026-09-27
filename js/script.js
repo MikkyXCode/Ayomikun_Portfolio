@@ -126,7 +126,7 @@ filterButtons.forEach((button) => {
             /*
                Get the project's category.
             */
-            const projectCategory = project.dataset.category;
+            const projectCategories = project.dataset.category.split(/\s+/);
 
 
             /*
@@ -137,7 +137,7 @@ filterButtons.forEach((button) => {
             */
             if (
                 selectedCategory === "all" ||
-                projectCategory === selectedCategory
+                projectCategories.includes(selectedCategory)
             ) {
 
                 project.style.display = "flex";
@@ -156,7 +156,40 @@ filterButtons.forEach((button) => {
 
 
 /* =========================================================
-   4. SCROLL REVEAL ANIMATION
+   4. PROJECT DETAIL POPUP
+========================================================= */
+
+const projectDialog = document.querySelector("#project-dialog");
+const projectDialogTitle = document.querySelector("#project-dialog-title");
+const projectDialogContent = document.querySelector(".project-dialog-content");
+const projectDialogClose = document.querySelector(".project-dialog-close");
+
+projectCards.forEach((project) => {
+
+    const trigger = project.querySelector(".project-card-trigger");
+    const details = project.querySelector(".project-details");
+
+    trigger.addEventListener("click", () => {
+        projectDialogTitle.textContent = project.querySelector(".project-content h3").textContent;
+        projectDialogContent.replaceChildren(details.content.cloneNode(true));
+        projectDialog.showModal();
+    });
+
+});
+
+projectDialogClose.addEventListener("click", () => {
+    projectDialog.close();
+});
+
+projectDialog.addEventListener("click", (event) => {
+    if (event.target === projectDialog) {
+        projectDialog.close();
+    }
+});
+
+
+/* =========================================================
+   5. SCROLL REVEAL ANIMATION
 ========================================================= */
 
 
